@@ -1,15 +1,14 @@
 import cv2
 import time
-import numpy as np # eta tho jana acche module ta eta functional module jeta functional programing r math korte use hoi .....best module 
+import numpy as np 
 import Handtrackmod as htm
-import math #numpy er choto bhai
-from ctypes import cast, POINTER # used to cast DLL files into python and use them as pure python files
-from comtypes import CLSCTX_ALL  #comtypes allows to define, call, and implement custom and dispatch-based COM interfaces in pure Python
-from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume # eta tho khub vital eta chara kom beshi kora re impossible and ei khane eta use kora hoi che sob audio utilities and endpoint volume er jonno ..... os o use kora jeto but still cholbe 
+import math 
+from ctypes import cast, POINTER 
+from comtypes import CLSCTX_ALL 
+from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume 
 
-################################
 wCam, hCam = 640, 480
-################################
+
 
 cap = cv2.VideoCapture(0)
 cap.set(3, wCam)
